@@ -38,6 +38,12 @@ export class CalComponent  implements OnInit{
       let result = eval(this.inputStr.controls.text.value)
       this.inputStr.controls.text.setValue(result)
     }
+    
+    deleteLast(){
+      let str = this.inputStr.controls.text.value
+      str = str.slice(0,-1);
+      this.inputStr.controls.text.setValue(str)
+    }
 
   }
   

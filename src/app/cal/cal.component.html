@@ -14,7 +14,8 @@
                 <button class="btn btn-info" (click)="buttonClick($event.target)">-</button>
                 <button class="btn btn-info" (click)="buttonClick($event.target)">*</button>
                 <button class="btn btn-info" (click)="buttonClick($event.target)">/</button>
-                <button class="btn btn-success" (click)="calculate()">=</button>
+                <button class="btn btn-info" (click)="buttonClick($event.target)">%</button>
+                
               </div>
             </div>
            <div class="operands row">
@@ -23,6 +24,8 @@
               <button class="btn btn-warning" (click)="buttonClick($event.target)">2</button>
               <button class="btn btn-warning" (click)="buttonClick($event.target)">3</button>
               <button class="btn btn-danger" (click)="clearDisplay()">C</button>
+              <button class="btn btn-danger"  (click)="deleteLast()">DEL</button>
+              
             </div>
            </div>
            <div class="operands row">
@@ -31,6 +34,7 @@
               <button class="btn btn-warning" (click)="buttonClick($event.target)">5</button>
               <button class="btn btn-warning" (click)="buttonClick($event.target)">6</button>
               <button class="btn btn-warning"  (click)="buttonClick($event.target)">0</button>
+              <button class="btn btn-success" (click)="calculate()">=</button>
             </div>
            </div>
            <div class="operands row">
@@ -39,6 +43,7 @@
               <button class="btn btn-warning" (click)="buttonClick($event.target)">8</button>
               <button class="btn btn-warning" (click)="buttonClick($event.target)">9</button>
               <button class="btn btn-warning" (click)="buttonClick($event.target)">.</button>
+              
             </div>
            </div>
           </div>
