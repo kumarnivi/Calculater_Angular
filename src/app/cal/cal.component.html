@@ -1,0 +1,44 @@
+<div class="container pt-5">
+    <div class="display">
+      <form action="" [formGroup]="inputStr" class="form">
+        <input type="text" name="" id="" formControlName="text" class="form-control w-5">
+      </form>
+    </div>
+    <div class="buttons">
+      <div class="operators">
+        <div class="row">
+          <div class="col-auto">
+            <button class="btn btn-info" (click)="buttonClick($event.target)">+</button>
+            <button class="btn btn-info" (click)="buttonClick($event.target)">-</button>
+            <button class="btn btn-info" (click)="buttonClick($event.target)">*</button>
+            <button class="btn btn-info" (click)="buttonClick($event.target)">/</button>
+            <button class="btn btn-success" (click)="calculate()">=</button>
+          </div>
+        </div>
+       <div class="operands row">
+        <div class="col-auto">
+          <button class="btn btn-warning" (click)="buttonClick($event.target)">1</button>
+          <button class="btn btn-warning" (click)="buttonClick($event.target)">2</button>
+          <button class="btn btn-warning" (click)="buttonClick($event.target)">3</button>
+          <button class="btn btn-danger" (click)="clearDisplay()">Clear</button>
+        </div>
+       </div>
+       <div class="operands row">
+        <div class="col-auto">
+          <button class="btn btn-warning" (click)="buttonClick($event.target)">4</button>
+          <button class="btn btn-warning" (click)="buttonClick($event.target)">5</button>
+          <button class="btn btn-warning" (click)="buttonClick($event.target)">6</button>
+          <button class="btn btn-warning"  (click)="buttonClick($event.target)">0</button>
+        </div>
+       </div>
+       <div class="operands row">
+        <div class="col-auto">
+          <button class="btn btn-warning" (click)="buttonClick($event.target)">7</button>
+          <button class="btn btn-warning" (click)="buttonClick($event.target)">8</button>
+          <button class="btn btn-warning" (click)="buttonClick($event.target)">9</button>
+          <button class="btn btn-warning" (click)="buttonClick($event.target)">.</button>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
